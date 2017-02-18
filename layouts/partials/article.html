@@ -1,0 +1,59 @@
+<article class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        <!--<%- partial('post/gallery') %>-->
+        {{ if .Title }}
+        <header class="article-header">
+            <h1 class="article-title" itemprop="name">{{ .Title }}</h1>
+        </header>
+        {{ end }}
+        <div class="article-meta">
+            <a href="{{ .RelPermalink }}" class="article-date">
+                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
+            </a>
+            {{ $Site := .Site }}
+            {{ if .Params.categories }}
+            <div class="post-categories">
+                <div class="article-category">
+                    {{ range $i, $e := .Params.categories }}
+                    {{ if gt $i 0 }}
+                    <span>&gt;</span>
+                    {{ end }}
+                    <a class="article-category-link" href="{{ $Site.BaseURL }}/categories/{{ $e | urlize }}">{{ $e }}</a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+            {{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
+            <div class="article-comment-link-wrap">
+                <a href="{{ .RelPermalink }}#ds-thread" class="article-comment-link">Comments</a>
+            </div>
+            {{ end }}
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            {{ .Content }}
+        </div>
+
+        {{ if not .Params.notoc }}
+        {{ if .TableOfContents }}
+        <div class="article-toc">
+            <h3>Contents</h3>
+            {{ .TableOfContents }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ if .Params.tags }}
+        <footer class="article-footer">
+            <ul class="article-tag-list">
+                {{ range .Params.tags }}
+                <li class="article-tag-list-item">
+                    <a class="article-tag-list-link" href="{{ $Site.BaseURL}}/tags/{{ . | urlize }}">{{ . }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </footer>
+        {{ end }}
+    </div>
+    {{ partial "nav.html" . }}
+</article>

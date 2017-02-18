@@ -1,0 +1,54 @@
+{{ partial "head.html" . }}
+
+<body>
+<div id="container">
+    {{ partial "header.html" . }}
+    <section id="main" class="outer">
+        {{ partial "article.html" . }}
+
+        <!--<% if (!index && theme.share_jia){ %>-->
+        <!--<%- partial('post/share_jia') %>-->
+        <!--<% } %>-->
+
+        <!--<% if (!index && theme.share_addthis){ %>-->
+        <!--<%- partial('post/share_addthis') %>-->
+        <!--<% } %>-->
+        {{ partial "share_addthis.html" . }}
+
+        {{ if not .Params.nocomment }}
+            {{ template "_internal/disqus.html" . }}
+        {{ end }}
+        <!--<% if (!index && post.comments && config.disqus_shortname){ %>-->
+        <!--<section id="comments">-->
+        <!--<div id="disqus_thread">-->
+        <!--<noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>-->
+        <!--</div>-->
+        <!--</section>-->
+        <!--<% } %>-->
+
+        <!--<% if (!index && post.comments && config.duoshuo_shortname){ %>-->
+        <!--<section id="comments">-->
+        <!--&lt;!&ndash; 多说评论框 start &ndash;&gt;-->
+        <!--<div class="ds-thread" data-thread-key="<%= post.layout %>-<%= post.slug %>" data-title="<%= post.title %>" data-url="<%= page.permalink %>"></div>-->
+        <!--&lt;!&ndash; 多说评论框 end &ndash;&gt;-->
+        <!--&lt;!&ndash; 多说公共JS代码 start (一个网页只需插入一次) &ndash;&gt;-->
+        <!--<script type="text/javascript">-->
+        <!--var duoshuoQuery = {short_name:'<%= config.duoshuo_shortname %>'};-->
+        <!--(function() {-->
+        <!--var ds = document.createElement('script');-->
+        <!--ds.type = 'text/javascript';ds.async = true;-->
+        <!--ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';-->
+        <!--ds.charset = 'UTF-8';-->
+        <!--(document.getElementsByTagName('head')[0]-->
+        <!--|| document.getElementsByTagName('body')[0]).appendChild(ds);-->
+        <!--})();-->
+        <!--</script>-->
+        <!--&lt;!&ndash; 多说公共JS代码 end &ndash;&gt;-->
+        <!--</section>-->
+        <!--<% } %>-->
+    </section>
+    {{ partial "footer.html" . }}
+    <!--<%- partial('_partial/after-footer') %>-->
+</div>
+</body>
+</html>

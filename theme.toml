@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Minos"
+license = "MIT"
+licenselink = "https://github.com/carsonip/hugo-theme-minos/blob/master/LICENSE.md"
+description = ""
+homepage = "https://github.com/carsonip/hugo-theme-minos"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.15
+
+[author]
+  name = "Carson Ip"
+  homepage = "https://github.com/carsonip"
+
+# If porting an existing theme
+[original]
+  name = "Minos"
+  homepage = "https://github.com/ppoffice/hexo-theme-minos"
+  repo = "https://github.com/ppoffice/hexo-theme-minos"
