@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+<body>
+<div id="container">
+    {{ partial "header.html" . }}
+    <section id="main" class="outer">
+        <section class="archives-wrap">
+            <div class="archive-tag-wrap">
+                <span class="archive-tag">#{{ .Title }}</span>
+            </div>
+            <div class="archives">
+                {{ range .Data.Pages }}
+                {{ partial "li.html" . }}
+                {{ end }}
+            </div></section>
+    </section>
+    {{ partial "footer.html" . }}
+</div>
+</body>
+</html>
