@@ -9,7 +9,7 @@
                 <!--<%- partial('post/gallery') %>-->
                 {{ if .Title }}
                 <header class="article-header">
-                    <h1 class="article-title" itemprop="name">{{ .Title }}</h1>
+                    <h1 itemprop="name"><a class="article-title" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
                 </header>
                 {{ end }}
                 <div class="article-meta">
