@@ -3,7 +3,7 @@
 <div id="container">
     {{ partial "header.html" . }}
     <section id="main" class="outer">
-        {{ range .Data.Pages }}
+        {{ range .Paginator.Pages }}
         <article class="article article-type-post" itemscope itemprop="blogPost">
             <div class="article-inner">
                 <!--<%- partial('post/gallery') %>-->
@@ -57,6 +57,8 @@
             </div>
         </article>
         {{ end }}
+
+        {{ partial "pagination.html" . }}
     </section>
     {{ partial "footer.html" . }}
 </div>
