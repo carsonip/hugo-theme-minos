@@ -23,7 +23,7 @@
                 </div>
             </div>
             {{ end }}
-            {{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
+            {{ if .Site.Params.disqusShortname }}
             <div class="article-comment-link-wrap">
                 <a href="{{ .RelPermalink }}#ds-thread" class="article-comment-link">Comments</a>
             </div>
