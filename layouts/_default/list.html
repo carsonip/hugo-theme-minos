@@ -9,23 +9,11 @@
             </div>
             <div class="archives">
                 {{ range .Data.Pages }}
-                <article class="archive-article archive-type-post">
-                    <div class="archive-article-inner">
-                        <header class="archive-article-header">
-                            <a href="{{ .RelPermalink }}" class="archive-article-date">
-                                <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006 Jan 2" }}</time>
-                            </a>
-                            <h1 itemprop="name">
-                                <a class="archive-article-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                            </h1>
-                        </header>
-                    </div>
-                </article>
+                    {{ partial "li.html" . }}
                 {{ end }}
         </div></section>
     </section>
     {{ partial "footer.html" . }}
-    <!--<%- partial('_partial/after-footer') %>-->
 </div>
 </body>
 </html>
