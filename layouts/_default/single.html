@@ -5,7 +5,6 @@
     {{ partial "header.html" . }}
     <section id="main" class="outer">
         {{ partial "article.html" . }}
-        {{ partial "share_addthis.html" . }}
         {{ if not .Params.nocomment }}
             {{ template "_internal/disqus.html" . }}
         {{ end }}
