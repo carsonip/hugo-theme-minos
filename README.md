@@ -13,6 +13,7 @@ Minos is a hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice
 * Disqus
 * Google Analytics
 * [KaTeX](https://github.com/Khan/KaTeX)
+* no jQuery :)
 
 ## Installation
 
