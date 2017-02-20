@@ -4,10 +4,10 @@
 name = "Minos"
 license = "MIT"
 licenselink = "https://github.com/carsonip/hugo-theme-minos/blob/master/LICENSE.md"
-description = ""
+description = "A simple and retro styled theme ported from Hexo"
 homepage = "https://github.com/carsonip/hugo-theme-minos"
-tags = ["", ""]
-features = ["", ""]
+tags = ["blog", "minimal"]
+features = ["blog", ""]
 min_version = 0.15
 
 [author]
