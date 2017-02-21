@@ -25,7 +25,5 @@
     <meta name="keywords" content="{{ range .Keywords }}{{ . }},{{ end }}">
     <meta name="author" content="{{ .Params.author }}">
 
-    {{ template "_internal/google_analytics.html" . }}
-
     {{ .Hugo.Generator }}
 </head>
