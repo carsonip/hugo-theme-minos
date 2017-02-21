@@ -1,8 +1,8 @@
 # Minos
 
-**_A simple and retro styled Hexo theme, concentrated more on your ideas._**
+**_A simple and retro styled theme, concentrated more on your ideas._**
 
-Minos is a hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice/hexo-theme-minos). Requires Hugo v0.15+.
+Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice/hexo-theme-minos). Requires Hugo v0.15+.
 
 ## Features
 
