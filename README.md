@@ -80,4 +80,4 @@ Carson Ip
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/carsonip/hugo-theme-minos/blob/master/LICENSE.md) file for more details.
