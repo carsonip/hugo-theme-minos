@@ -14,6 +14,7 @@ Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice
 * Disqus
 * Google Analytics
 * [KaTeX](https://github.com/Khan/KaTeX)
+* Syntax highlighting using [highlight.js](https://github.com/isagalaev/highlight.js)
 * no jQuery :)
 
 ## Installation
