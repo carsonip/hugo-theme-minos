@@ -4,6 +4,12 @@
 
 Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice/hexo-theme-minos). Requires Hugo v0.15+.
 
+## Screenshots
+
+![Home](https://github.com/carsonip/hugo-theme-minos/tree/master/images/screenshot.png)
+![Article](https://github.com/carsonip/hugo-theme-minos/tree/master/images/article.png)
+![Tag](https://github.com/carsonip/hugo-theme-minos/tree/master/images/tag.png)
+
 ## Features
 
 * Everything in the original Mino theme, except
