@@ -10,6 +10,7 @@ Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice
     * Gallery (fancybox)
     * Duoshuo comment
     * Search box
+    * Hierarchical categories (since this isn't supported in Hugo)
 * Disqus
 * Google Analytics
 * [KaTeX](https://github.com/Khan/KaTeX)
