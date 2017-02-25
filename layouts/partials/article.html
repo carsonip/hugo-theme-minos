@@ -34,12 +34,53 @@
 
         {{ if not .Params.notoc }}
         {{ if .TableOfContents }}
-        <div class="article-toc">
+        <div class="article-toc" {{ if .Site.Params.SmartToc }}style="display:none;"{{ end }}>
             <h3>Contents</h3>
             {{ .TableOfContents }}
         </div>
         {{ end }}
         {{ end }}
+
+        {{ if .Site.Params.SmartToc }}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var $toc = $('#TableOfContents');
+                if ($toc.length > 0) {
+                    var $window = $(window);
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
+
+                    function onScroll(){
+                        var currentScroll = $window.scrollTop();
+                        var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
+                        var id = "";
+                        h.each(function (i, e) {
+                            e = $(e);
+                            if (e.offset().top - 10 <= currentScroll) {
+                                id = e.attr('id');
+                            }
+                        });
+                        var active = $toc.find('a.active');
+                        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+                        active.each(function (i, e) {
+                            $(e).removeClass('active').siblings('ul').hide();
+                        });
+                        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                            $(e).children('a').addClass('active').siblings('ul').show();
+                        });
+                    }
+                }
+            })();
+        </script>
+        {{ end }}
+
 
         {{ if .Params.tags }}
         <footer class="article-footer">
