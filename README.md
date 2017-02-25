@@ -17,11 +17,11 @@ Minos is a Hugo theme ported from Hexo theme [Minos](https://github.com/ppoffice
     * Duoshuo comment
     * Search box
     * Hierarchical categories (since this isn't supported in Hugo)
+* Smart table of contents (will highlight and expand current section in TOC)
 * Disqus
 * Google Analytics
 * [KaTeX](https://github.com/Khan/KaTeX)
 * Syntax highlighting using [highlight.js](https://github.com/isagalaev/highlight.js)
-* no jQuery :)
 
 ## Installation
 
@@ -39,6 +39,12 @@ theme = "hugo-theme-minos"
 ```
 
 ## Options
+
+### Smart TOC
+```
+[params]
+    smartToc = true
+```
 
 ### Disqus
 ```
