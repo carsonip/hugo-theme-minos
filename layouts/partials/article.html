@@ -51,7 +51,7 @@
 
                     $window.on('scroll', onScroll);
                     $(document).ready(function() {
-                        $toc.find('li').find('ul').hide();
+                        $toc.find('a').parent('li').siblings('ul').hide();
                         onScroll();
                         document.getElementsByClassName('article-toc')[0].style.display = '';
                     });
