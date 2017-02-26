@@ -683,7 +683,7 @@ a.article-title:hover,
   padding-left: 20px;
   overflow-y: auto;
   line-height: 1.4em;
-  max-height: 40.32em;
+  max-height: 85%;
 }
 .article-toc h3 {
   font-weight: bold;
