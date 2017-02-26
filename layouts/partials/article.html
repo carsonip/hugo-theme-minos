@@ -49,13 +49,6 @@
                 if ($toc.length > 0) {
                     var $window = $(window);
 
-                    $window.on('scroll', onScroll);
-                    $(document).ready(function() {
-                        $toc.find('a').parent('li').find('ul').hide();
-                        onScroll();
-                        document.getElementsByClassName('article-toc')[0].style.display = '';
-                    });
-
                     function onScroll(){
                         var currentScroll = $window.scrollTop();
                         var h = $('.article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6');
@@ -76,6 +69,13 @@
                             $(e).children('a').addClass('active').siblings('ul').show();
                         });
                     }
+
+                    $window.on('scroll', onScroll);
+                    $(document).ready(function() {
+                        $toc.find('a').parent('li').find('ul').hide();
+                        onScroll();
+                        document.getElementsByClassName('article-toc')[0].style.display = '';
+                    });
                 }
             })();
         </script>
