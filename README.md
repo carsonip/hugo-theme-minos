@@ -64,6 +64,15 @@ theme = "hugo-theme-minos"
     katex = true
 ```
 
+## Post Params
+
+### Featured Image displayed in index.html
+```
++++
+featuredImage = "img/foobar.jpg"
++++
+```
+
 ## Contributing
 
 1. Fork it!
