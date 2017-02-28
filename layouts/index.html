@@ -36,7 +36,10 @@
                     {{ end }}
                 </div>
                 <div class="article-entry" itemprop="articleBody">
+                    <p>
+                        {{ if .Params.featuredImage }}<img src="{{.Params.featuredImage}}"><br>{{ end }}
                     {{ .Summary }}
+                    </p>
                     <p class="article-more-link">
                         <a href="{{ .RelPermalink }}">Read More</a>
                     </p>
