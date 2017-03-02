@@ -692,6 +692,7 @@ a.article-title:hover,
 .article-toc li {
   list-style: none;
   margin-left: 20px;
+  margin-top: 2px;
 }
 .article-toc li a {
   color: #000;
