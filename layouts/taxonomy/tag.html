@@ -8,7 +8,7 @@
                 <span class="archive-tag">#{{ .Title }}</span>
             </div>
             <div class="archives">
-                {{ range .Data.Pages }}
+                {{ range .Paginator.Pages }}
                 {{ partial "li.html" . }}
                 {{ end }}
             </div></section>
