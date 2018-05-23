@@ -784,11 +784,6 @@ a.article-title:hover,
 #page-nav .page-number {
   display: inline-block;
 }
-@media screen and (max-width: 839px) {
-  #page-nav .page-number {
-    display: none;
-  }
-}
 #page-nav .current {
   color: #fff;
   border-radius: 18px;
