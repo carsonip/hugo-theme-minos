@@ -5,7 +5,7 @@
     <section id="main" class="outer">
         <section class="archives-wrap">
             <div class="archive-tag-wrap">
-                <span class="archive-tag">#{{ .Title }}</span>
+                <span class="archive-tag">#{{ .Title | lower }}</span>
             </div>
             <div class="archives">
                 {{ range .Paginator.Pages }}
