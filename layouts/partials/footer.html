@@ -1,8 +1,9 @@
 <footer id="footer">
     <div class="outer">
         <div id="footer-info" class="inner">
-            &copy; {{ now.Format "2006"}} {{ or .Site.Author .Site.Title }}&nbsp;
-            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos">Minos</a>
+            &copy; {{ now.Format "2006"}} {{ or .Site.Author.name .Site.Title }}
+            <br />
+            Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> with theme <a href="https://github.com/carsonip/hugo-theme-minos" target="_blank">Minos</a>
         </div>
     </div>
     {{ template "_internal/google_analytics_async.html" . }}
