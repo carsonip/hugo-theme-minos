@@ -80,6 +80,14 @@ featuredImage = "img/foobar.jpg"
 +++
 ```
 
+### Hide the post from index.html
+This can be used when creating an "About me"-page.
+```
++++
+hide = true
++++
+```
+
 ## Contributing
 
 1. Fork it!
