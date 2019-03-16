@@ -84,7 +84,7 @@ featuredImage = "img/foobar.jpg"
 This can be used when creating an "About me"-page.
 ```
 +++
-hide = true
+hidden = true
 +++
 ```
 
