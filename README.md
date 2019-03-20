@@ -88,6 +88,14 @@ hidden = true
 +++
 ```
 
+### Enable KaTeX for this post
+This can be used when creating an "About me"-page.
+```
++++
+katex = true
++++
+```
+
 ## Contributing
 
 1. Fork it!
