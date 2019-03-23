@@ -53,8 +53,7 @@ paginate = 10
 
 ### Disqus
 ```
-[params]
-    disqusShortname = "xxxxxx"
+disqusShortname = "xxxxxx"
 ```
 
 ### Google Analytics
