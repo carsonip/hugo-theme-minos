@@ -91,6 +91,14 @@ hidden = true
 +++
 ```
 
+### Enable KaTeX for this post
+Enable KaTeX for a specific post without enabling the global switch.
+```
++++
+katex = true
++++
+```
+
 ## Contributing
 
 1. Fork it!
