@@ -89,7 +89,7 @@ hidden = true
 ```
 
 ### Enable KaTeX for this post
-This can be used when creating an "About me"-page.
+Enable KaTeX for a specific post without enabling the global switch.
 ```
 +++
 katex = true
