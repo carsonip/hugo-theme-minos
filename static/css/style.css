@@ -257,7 +257,7 @@ a.article-title:hover,
 .article-entry ul,
 .article-entry ol,
 .article-entry dl {
-  margin: 0 20px;
+  margin: 0 25px;
   line-height: 1.4em;
 }
 .article-entry ul ul,
