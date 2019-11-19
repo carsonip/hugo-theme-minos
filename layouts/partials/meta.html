@@ -1,6 +1,9 @@
+    {{- $author := .Site.Params.Author -}}
+    {{- $description := or (.Description) (.Site.Params.Description) -}}
+    {{- $keywords := or (.Keywords) (.Site.Params.Keywords) -}}
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name="description" content="{{ .Site.Params.Description }}">
-    <meta name="keywords" content="{{ range .Site.Params.Keywords }}{{ . }},{{ end }}">
-    <meta name="author" content="{{ .Site.Params.Author }}">
+    {{ if $author -}} <meta name="author" content="{{ range $author }} {{ .displayname }}, {{ end}}"> {{- end }}
+    {{ if $description -}} <meta name="description" content="{{ $description }}"> {{- end }}
+    {{ if $keywords -}} <meta name="keywords" content="{{ range $keywords }}{{ . }},{{ end }}"> {{- end }}
