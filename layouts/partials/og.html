@@ -3,6 +3,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="{{ .Lang }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
-    {{ if .Params.ogimage }}
+    {{ if .Params.ogimage -}}
     <meta property="og:image" content="{{ .Params.ogimage }}" />
-    {{ end }}
+    {{- end }}

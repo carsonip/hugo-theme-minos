@@ -8,9 +8,9 @@
                 <span class="archive-category">{{ .Title }}</span>
             </div>
             <div class="archives">
-                {{ range .Paginator.Pages }}
+                {{- range .Paginator.Pages }}
                     {{ partial "li.html" . }}
-                {{ end }}
+                {{- end -}}
         </div></section>
         {{ partial "pagination.html" . }}
     </section>
