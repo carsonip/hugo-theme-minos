@@ -6,8 +6,10 @@
     {{ partial "meta.html" . }}
     {{ partial "og.html" . }}
 
-    <link href="{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    <link rel="shortcut icon" href="/favicon.png">
+    {{- with .OutputFormats.Get "rss" -}}
+    <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
+    {{- end }}
+    <link rel="shortcut icon" href="/favicon.ico">
 
     <link href="{{ "webfonts/ptserif/main.css" | absURL }}" rel='stylesheet' type='text/css'>
     <link href="{{ "webfonts/source-code-pro/main.css" | absURL }}" rel="stylesheet" type="text/css">
