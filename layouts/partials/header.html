@@ -2,7 +2,7 @@
     <div id="header-outer" class="outer">
         <div id="header-inner" class="inner">
             <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
-            <a id="logo" class="logo-text" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <a id="logo" class="logo-text" href="{{ .Site.Home.Permalink }}">{{ .Site.Title }}</a>
             <nav id="main-nav">
                 {{ range .Site.Menus.main }}
                 <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
