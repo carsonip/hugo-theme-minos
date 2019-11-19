@@ -6,9 +6,11 @@
         </header>
         {{ end }}
         <div class="article-meta">
+            {{- if not .Params.omitDate }}
             <a href="{{ .RelPermalink }}" class="article-date">
                 <time datetime='{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}' itemprop="datePublished">{{ .Date.Format "2006-01-02" }}</time>
             </a>
+            {{ end -}}
             {{ $Site := .Site }}
             {{ if .Params.categories }}
             <div class="post-categories">

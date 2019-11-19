@@ -99,6 +99,14 @@ katex = true
 +++
 ```
 
+### Suppress date in an article
+Hide the date from an article, e.g. because it's just an index:
+```
++++
+omitDate = true
++++
+```
+
 ## Contributing
 
 1. Fork it!
