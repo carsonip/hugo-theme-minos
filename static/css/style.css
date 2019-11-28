@@ -169,6 +169,15 @@ body {
   text-decoration: none;
   background-image: none;
 }
+.logo-subtext {
+  width: auto;
+  color: #ccc;
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  background-image: none;
+}
 .article-meta a,
 a.article-title,
 .article-entry a,

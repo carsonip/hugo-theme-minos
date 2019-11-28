@@ -3,6 +3,9 @@
         <div id="header-inner" class="inner">
             <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
             <a id="logo" class="logo-text" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            {{ if .Site.Params.showPageSubtitle }}
+            <div class="logo-subtext">{{ .Site.Params.Description }}</div>
+            {{ end }}
             <nav id="main-nav">
                 {{ range .Site.Menus.main }}
                 <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
