@@ -58,8 +58,7 @@ disqusShortname = "xxxxxx"
 
 ### Google Analytics
 ```
-[params]
-    googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-123-45"
 ```
 
 ### KaTeX
