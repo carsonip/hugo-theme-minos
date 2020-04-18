@@ -51,6 +51,14 @@ paginate = 10
     smartToc = true
 ```
 
+### Post Navigation
+```
+[params]
+    noPostNavigation = true
+```
+
+This option disables links to next and previous post at the bottom of posts.
+
 ### Disqus
 ```
 disqusShortname = "xxxxxx"
