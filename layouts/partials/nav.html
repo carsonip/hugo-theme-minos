@@ -1,3 +1,4 @@
+{{ if not .Site.Params.NoPostNavigation }}
 <nav id="article-nav">
     {{ if .NextPage }}
     <a href="{{ .NextPage.RelPermalink }}" id="article-nav-newer" class="article-nav-link-wrap">
@@ -12,3 +13,4 @@
     </a>
     {{ end }}
 </nav>
+{{ end }}
