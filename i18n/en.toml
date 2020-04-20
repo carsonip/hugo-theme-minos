@@ -6,3 +6,9 @@ other = "Comments"
 
 [ReadMore]
 other = "Read More"
+
+[Prev]
+other = "Prev"
+
+[Next]
+other = "Next"
