@@ -89,7 +89,7 @@
             <ul class="article-tag-list">
                 {{ range .Params.tags }}
                 <li class="article-tag-list-item">
-                    <a class="article-tag-list-link" href="{{ $Site.BaseURL}}/tags/{{ . | urlize }}">{{ . }}
+                    <a class="article-tag-list-link" href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}
                     </a>
                 </li>
                 {{ end }}
